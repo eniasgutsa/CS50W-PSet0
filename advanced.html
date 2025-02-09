@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Search</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: red;
+            text-align: left;
+            font-weight: lighter;
+            padding-left: 30px;
+        }
+
+        label {
+            display: block;
+            float: left;
+            width: 200px;
+            text-align: left;
+            margin-right: 50px;
+            padding-left: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 8px;
+        }
+
+        input[type = "text"] {
+            border-radius: 2px;
+            border-width: 0.5px;
+            border-color: black;
+            width: 60%;
+            margin: auto;
+        }
+
+        input[type = "submit"] {
+            background-color: blue;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 4px;
+            margin-left: 72%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html" style="font-size: 17px;">Google Search</a></li>
+            <li><a href="image.html" style="font-size: 17px;">Image Search</a></li>
+        </ul>
+    </nav>
+    <h1>Advanced Search</h1>
+    <p style="padding-left: 30px; font-weight: bold;">Find pages with...</p>
+    <div class="form-contaner">
+    <form action="https://www.google.com/search" method="get">
+        <div class="form-group">
+            <label for="all-words">all these words:</label>
+            <input type="text" id="all-words" name="all-words">
+        </div>
+        <div class="form-group">
+            <label for="exact-phrase">this exact word or phrase:</label>
+            <input type="text" id="exact-phrase" name="exact-phrase">
+        </div>
+        <div class="form-group">
+            <label for="any-words">any of these words:</label>
+            <input type="text" id="any-words" name="any-words">
+        </div>
+        <div class="form-group">
+            <label for="none-words">none of these words:</label>
+            <input type="text" id="none-words" name="none-words">
+        </div>
+        <div class="sub">
+            <input type="submit" value="Advanced Search">
+        </div>
+    </form>
+    </div>
+</body>
+</html>
